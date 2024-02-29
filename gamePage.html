@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minigames!</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>My second javascript project ~ <span>A Minigame-collection</span></h1>
+    <section class="gameSection">
+      <p class="gameInfo">Play a game of Rock, Paper, Scissors against the computer!</p>
+      <div class="gameFrame">
+        <p class="gameText">1. Make your choice!</p>
+        <div class="gameButtons">
+          <button onclick="rockPaperScissors('rock')">Rock</button>
+          <button onclick="rockPaperScissors('paper')">Paper</button>
+          <button onclick="rockPaperScissors('scissors')">Scissors</button>
+        </div>
+        <div>
+          <p class="gameText" id="yourPick">Your Choice: <span class="gameInfo" id="userPick"></span></p>
+          <p class="gameText">2. Wait for the computer to pick: <span class="gameInfo" id="computerPick"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <h2>Flip a coin!</h2>
+    <section class="gameSection">
+      <p>Flip a coin vs the computer</p>
+    </section>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
