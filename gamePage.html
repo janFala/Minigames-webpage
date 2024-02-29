@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <h1>My second javascript project ~ <span>A Minigame-collection</span></h1>
+    <h1>My second javascript project ~ <span>A Minigame-Collection</span></h1>
     <section class="gameSection">
       <p class="gameInfo">Play a game of Rock, Paper, Scissors against the computer!</p>
       <div class="gameFrame">
@@ -24,11 +24,29 @@
       </div>
     </section>
 
-    <h2>Flip a coin!</h2>
     <section class="gameSection">
-      <p>Flip a coin vs the computer</p>
+      <p class="gameInfo">Flip a coin vs the computer</p>
+      <div class="gameFrame">
+        <p class="gameText">1. Pick your side!</p>
+        <div class="gameButtons">
+          <button onclick="playCoinflip('heads')">Heads</button>
+          <button onclick="playCoinflip('tails')">Tails</button>
+        </div>
+        <div>
+          <p class="gameText">Your Choice: <span class="gameInfo" id="userPick2"></span></p>
+          <p class="gameText">2. Wait for the result: <span class="gameInfo" id="computerPick2"></span></p>
+        </div>
+      </div>
     </section>
 
+    <section class="gameSection" id="resetSection">
+      <p class="gameInfo">Reset your stats here</p>
+      <div class="gameButtons" id="resetButtons">
+        <button onclick="resetRockPaperScissors()">Rock Paper Scissors</button>
+        <button onclick="resetCoinflip()">Coinflip</button>
+        <button onclick="resetAll()">Reset all</button>
+      </div>
+    </section>
     <script src="scripts/script.js"></script>
   </body>
 </html>

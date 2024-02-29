@@ -5,18 +5,12 @@ body {
 }
 
 h1 {
+  margin-top: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-h1 {
+  margin-bottom: 3.5rem;
   font-size: x-large;
 }
+
 span {
   color: rgb(109, 96, 74);
 }
@@ -25,41 +19,55 @@ section {
   background-color: rgb(238, 222, 198);
 }
 
-/* static info about the gamemode */
+/* should have been a headding */
 .gameInfo {
   text-align: center;
   font-size: 1.5rem;
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 3rem;
+  text-decoration-line: underline;
+  text-underline-offset: 0.5em;
 }
 
 .gameSection {
   position: relative;
   border: 0.1rem solid rgb(193, 176, 153);
   box-shadow: 0.1rem 0.1rem grey;
-  height: 16rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 .gameFrame {
-  position: relative;
-  margin: 0% 0% 0% 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
 }
 
 .gameText {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.15rem;
   margin: 0 0 0.5rem 0;
+  min-width: 22rem;
+  width: auto;
 }
 
 .gameButtons {
-  height: 4.5rem;
-  width: 8.5rem;
-  margin: 0 0 0.6rem 1rem;
+  margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.5rem;
 }
 
 .gameButtons button {
-  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 10rem;
+  margin-bottom: 1em;
   font-family: "JetBrains Mono", monospace;
   cursor: pointer;
   text-align: center;
@@ -79,4 +87,13 @@ section {
 .gameButtons button:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+#resetButtons {
+  margin: 0 auto;
+  border-bottom: none;
+}
+
+#resetButtons button {
+  margin-bottom: 1em;
 }
